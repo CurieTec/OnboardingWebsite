@@ -31,7 +31,7 @@
 
     <span id="headertext">CurieTec.</span>
 
-    <div> 
+    <div>
         <input id="email" type="email" placeholder="Join our mailing list" />
         <input id="submit" type="button" />
         <i id="submiticon" class="fas fa-paper-plane"></i>
@@ -40,7 +40,7 @@
     <div id="bottombar">
         <span id="bottomtext">Made with ♡ in India<br />
             © CurieTec Ventures, 2021</span>
-        <img id="logo" src="images/logo.png" />
+        <a href="/"><img id="logo" src="/images/logo.png" /></a>
     </div>
 
     <div id="snackbar">You are now subscribed!</div>
@@ -78,7 +78,7 @@
             setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
         }
         var submitbtn = document.getElementById("submit");
-        submitbtn.addEventListener("click",write);
+        submitbtn.addEventListener("click", write);
     </script>
 </body>
 
