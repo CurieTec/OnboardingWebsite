@@ -3,152 +3,25 @@
 <head>
     <link href='https://fonts.googleapis.com/css?family=Viga' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/05db129dd0.js" crossorigin="anonymous"></script>
-
-    <style>
-        body {
-            overflow-x: hidden;
-            /* Hide scrollbars */
-        }
-
-        #illus {
-            /* header_illustration */
-            position: absolute;
-            width: 3586px;
-            height: 455px;
-            left: calc(50% - 3586px/2 + 9px);
-            top: -126px;
-        }
-
-        #headertext {
-            /* CurieTec. */
-
-            position: absolute;
-            width: 633px;
-            height: 219px;
-            left: calc(50% - 633px/2 - 0.5px);
-            top: 101px;
-
-            font-family: Viga;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 144px;
-            line-height: 194px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #00DF81;
-        }
-
-        #email {
-            position: absolute;
-            width: 648px;
-            height: 96px;
-            left: calc(50% - 648px/2 - 116px);
-            top: calc(50% - 96px/2);
-
-            background: linear-gradient(180deg, #E5FEF3 6.25%, rgba(229, 254, 230, 0) 43.02%, rgba(229, 254, 230, 0) 54.69%);
-            border: 1px solid #00DF81;
-            box-sizing: border-box;
-            border-radius: 12px;
-
-            font-family: Viga;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 36px;
-            line-height: 48px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #00DF81;
-        }
-
-        #email::placeholder {
-            /* Chrome, Firefox, Opera, Safari 10.1+ */
-            color: rgba(98, 248, 185, 0.5);
-            opacity: 1;
-            /* Firefox */
-        }
-
-        #submit {
-            position: absolute;
-            width: 215px;
-            height: 96px;
-            left: calc(50% - 215px/2 + 351.5px);
-            top: calc(50% - 96px/2);
-
-            background: linear-gradient(180deg, #00DF81 0%, #A6FCD8 100%);
-            border: 1px solid #00DF81;
-            box-sizing: border-box;
-            border-radius: 12px;
-        }
-
-        #submit:hover {
-            background: linear-gradient(180deg, #A6FCD8 100%, #00DF81 0%);
-        }
-
-        #submiticon {
-            position: absolute;
-            font-size: 64px;
-            color: #FFF;
-            left: calc(50% - 64px/2 + 352px);
-            top: calc(50% - 64px/2);
-            pointer-events: none;
-        }
-
-        #bottombar {
-            position: absolute;
-            width: 100%;
-            height: 271px;
-            left: 0;
-            bottom: 0px;
-
-            background: rgba(166, 252, 216, 0.5);
-        }
-
-        #bottomtext {
-            position: absolute;
-            width: 457px;
-            height: 63px;
-            left: 65px;
-            bottom: 104px;
-
-            font-family: Viga;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 24px;
-            line-height: 32px;
-
-            color: #00DF81;
-        }
-
-        #logo {
-            position: absolute;
-            width: 185px;
-            height: 185px;
-            right: 76px;
-            bottom: 43px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div>
-        <svg id="illus" width="3586" height="455" viewBox="0 0 3586 455" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M0.496467 360.296V165.935V19.1874L3585.87 0V235.578C3587.53 280.823 3574.15 371.311 3507.37 371.311C3423.9 371.311 3440.24 234.512 3371.68 235.578C3303.13 236.644 3251.98 424.965 3151.11 395.118C3050.23 365.271 3056.62 249.436 2913.48 246.949C2770.33 244.461 2798.75 410.041 2676.92 395.118C2555.08 380.194 2600.9 192.229 2491.15 188.321C2381.39 184.412 2454.92 368.824 2324.2 377.707C2193.49 386.59 2191 277.862 2071.66 283.191C1952.31 288.521 1965.45 423.899 1869.91 424.965C1774.36 426.031 1794.96 224.563 1697.99 214.614C1601.02 204.665 1570.83 294.206 1508.67 346.439C1446.51 398.671 1364.1 303.09 1287.03 294.206C1209.95 285.323 1187.21 461.208 1115.11 436.335C1043 411.463 978.002 296.694 924.367 308.064C870.732 319.434 801.114 416.437 730.074 406.488C659.034 396.539 654.061 288.166 558.158 284.257C462.254 280.349 530.808 472.223 454.795 453.746C378.783 435.269 356.405 324.053 272.934 335.424C189.462 346.794 213.26 453.746 101.373 453.746C11.8628 453.746 -3.17392 391.446 0.496467 360.296Z"
-                fill="url(#paint0_linear)" />
-            <defs>
-                <linearGradient id="paint0_linear" x1="1793" y1="-9.84582e-08" x2="1793.42" y2="513.804"
-                    gradientUnits="userSpaceOnUse">
-                    <stop offset="0.432292" stop-color="#A6FCD8" />
-                    <stop offset="1" stop-color="#A6FCE2" stop-opacity="0" />
-                </linearGradient>
-            </defs>
-        </svg>
-        <span id="headertext">CurieTec.</span>
-    </div>
+    
+    <svg id="illus" width="3586" height="455" viewBox="0 0 3586 455" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M0.496467 360.296V165.935V19.1874L3585.87 0V235.578C3587.53 280.823 3574.15 371.311 3507.37 371.311C3423.9 371.311 3440.24 234.512 3371.68 235.578C3303.13 236.644 3251.98 424.965 3151.11 395.118C3050.23 365.271 3056.62 249.436 2913.48 246.949C2770.33 244.461 2798.75 410.041 2676.92 395.118C2555.08 380.194 2600.9 192.229 2491.15 188.321C2381.39 184.412 2454.92 368.824 2324.2 377.707C2193.49 386.59 2191 277.862 2071.66 283.191C1952.31 288.521 1965.45 423.899 1869.91 424.965C1774.36 426.031 1794.96 224.563 1697.99 214.614C1601.02 204.665 1570.83 294.206 1508.67 346.439C1446.51 398.671 1364.1 303.09 1287.03 294.206C1209.95 285.323 1187.21 461.208 1115.11 436.335C1043 411.463 978.002 296.694 924.367 308.064C870.732 319.434 801.114 416.437 730.074 406.488C659.034 396.539 654.061 288.166 558.158 284.257C462.254 280.349 530.808 472.223 454.795 453.746C378.783 435.269 356.405 324.053 272.934 335.424C189.462 346.794 213.26 453.746 101.373 453.746C11.8628 453.746 -3.17392 391.446 0.496467 360.296Z"
+            fill="url(#paint0_linear)" />
+        <defs>
+            <linearGradient id="paint0_linear" x1="1793" y1="-9.84582e-08" x2="1793.42" y2="513.804"
+                gradientUnits="userSpaceOnUse">
+                <stop offset="0.432292" stop-color="#A6FCD8" />
+                <stop offset="1" stop-color="#A6FCE2" stop-opacity="0" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <span id="headertext">CurieTec.</span>
+    
 
     <div>
         <input id="email" type="email" placeholder="Join our mailing list" />
