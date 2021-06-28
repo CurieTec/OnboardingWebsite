@@ -14,7 +14,7 @@ body {
 #illuscont {
   position: absolute;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   height: 455px;
   top: -126px;
 }
