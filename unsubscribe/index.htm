@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href='https://fonts.googleapis.com/css?family=Viga' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/05db129dd0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>CurieTec</title>
-    <link rel="icon" href="images/logo.png" type="image/png" sizes="16x16">
+    <title>Unsubscribe | CurieTec</title>
+    <link rel="icon" href="/images/logo.png" type="image/png" sizes="16x16">
 </head>
 
 <body>
@@ -29,21 +29,21 @@
         </svg>
     </div>
 
-    <span id="headertext">CurieTec.</span>
+    <span id="headertext" style="width: 816px; left: calc(50% - 816px/2 - 0.5px);">Unsubscribe</span>
 
-    <div> 
-        <input id="email" type="email" placeholder="Join our mailing list" />
+    <div>
+        <input id="email" type="email" placeholder="Unsubscribe" />
         <input id="submit" type="button" />
-        <i id="submiticon" class="fas fa-paper-plane"></i>
+        <i id="submiticon" class="fas fa-user-minus"></i>
     </div>
 
     <div id="bottombar">
         <span id="bottomtext">Made with ♡ in India<br />
             © CurieTec Ventures, 2021</span>
-        <img id="logo" src="images/logo.png" />
+        <a href="/"><img id="logo" src="/images/logo.png" /></a>
     </div>
 
-        
+
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 
@@ -65,7 +65,7 @@
         function writeUserData(email) {
             database.ref('mailinglist').push({
                 email: email,
-                subscribed: true,
+                subscribed: false,
             });
         }
 
@@ -74,7 +74,7 @@
             alert("Email address submitted!");
         }
         var submitbtn = document.getElementById("submit");
-        submitbtn.addEventListener("click",write);
+        submitbtn.addEventListener("click", write);
     </script>
 </body>
 
