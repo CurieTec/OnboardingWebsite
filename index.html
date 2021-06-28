@@ -27,7 +27,7 @@
     <span id="headertext">CurieTec.</span>
 
 
-    <div>
+    <div> 
         <input id="email" type="email" placeholder="Join our mailing list" />
         <input id="submit" type="button" />
         <i id="submiticon" class="fas fa-paper-plane"></i>
@@ -38,6 +38,41 @@
             © CurieTec Ventures, 2021</span>
         <img id="logo" src="images/logo.png" />
     </div>
+
+        
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCL2h_-CLiVWvgQzbW9mPk4S1HPdW3lSFc",
+            authDomain: "onboarding-1ac20.firebaseapp.com",
+            projectId: "onboarding-1ac20",
+            databaseURL: "https://onboarding-1ac20-default-rtdb.firebaseio.com/",
+            storageBucket: "onboarding-1ac20.appspot.com",
+            messagingSenderId: "670995208269",
+            appId: "1:670995208269:web:028a3c379fca0dd28ce404"
+        };
+        firebase.initializeApp(firebaseConfig);
+        var database = firebase.database();
+
+        let emailid = document.getElementById('email');
+
+        function writeUserData(email) {
+            database.ref('mailinglist').push({
+                email: email,
+                subscribed: true,
+            });
+        }
+
+        function write() {
+            console.log("Writing");
+            writeUserData(emailid.value);
+            console.log("Written");
+        }
+        var submitbtn = document.getElementById("submit");
+        submitbtn.addEventListener("click",write);
+    </script>
 </body>
 
 </html>
