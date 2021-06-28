@@ -188,6 +188,9 @@ body {
   background-color: #333;
   color: #fff;
   text-align: center;
+  font-family: Viga;
+  font-style: normal;
+  font-weight: normal;
   border-radius: 2px;
   padding: 16px;
   position: fixed;
