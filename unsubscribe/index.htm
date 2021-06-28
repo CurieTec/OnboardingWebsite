@@ -43,6 +43,7 @@
         <a href="/"><img id="logo" src="/images/logo.png" /></a>
     </div>
 
+    <div id="snackbar">You are now unsubscribed!</div>
 
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
@@ -74,7 +75,9 @@
 
         function write() {
             writeUserData(emailid.value);
-            //alert("Email address unsubscribed!");
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
         }
         var submitbtn = document.getElementById("submit");
         submitbtn.addEventListener("click", write);
