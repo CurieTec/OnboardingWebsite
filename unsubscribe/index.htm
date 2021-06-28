@@ -62,8 +62,11 @@
 
         let emailid = document.getElementById('email');
 
-        function writeUserData(email) {
-            database.ref('mailinglist').push({
+        async function writeUserData(email) {
+            data = await database.ref('mailinglist').orderByChild('email').equalTo(email).once('value');
+            emref = null;
+            data.forEach((child) => { emref = child.ref; });
+            if (emref != null) emref.update({
                 email: email,
                 subscribed: false,
             });
@@ -71,7 +74,7 @@
 
         function write() {
             writeUserData(emailid.value);
-            alert("Email address unsubscribed!");
+            //alert("Email address unsubscribed!");
         }
         var submitbtn = document.getElementById("submit");
         submitbtn.addEventListener("click", write);
