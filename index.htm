@@ -70,9 +70,8 @@
         }
 
         function write() {
-            console.log("Writing");
             writeUserData(emailid.value);
-            console.log("Written");
+            alert("Email address submitted!");
         }
         var submitbtn = document.getElementById("submit");
         submitbtn.addEventListener("click",write);
