@@ -29,7 +29,7 @@
         </svg>
     </div>
 
-    <span id="headertext" style="width: 816px; left: calc(50% - 816px/2 - 0.5px);">Unsubscribe</span>
+    <span id="headertext">CurieTec.</span>
 
     <div>
         <input id="email" type="email" placeholder="Unsubscribe" />
@@ -77,7 +77,7 @@
             writeUserData(emailid.value);
             var x = document.getElementById("snackbar");
             x.className = "show";
-            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
         }
         var submitbtn = document.getElementById("submit");
         submitbtn.addEventListener("click", write);
