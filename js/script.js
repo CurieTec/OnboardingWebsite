@@ -173,3 +173,5 @@ $(".button").click(function () {
     basicTimeline.play();
     write();
 });
+
+$("#splash").fadeOut(500);
