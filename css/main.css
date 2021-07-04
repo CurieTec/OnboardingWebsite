@@ -211,6 +211,23 @@
   width: 100%;
 }
 
+#footer {
+  position: absolute;
+  bottom: 0%;
+  width: 100vw;
+  height: 200px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff0), color-stop(#fff), color-stop(#fff), to(#fff));
+  background-image: linear-gradient(#fff0, #fff, #fff, #fff);
+}
+
+a {
+  color: #000;
+}
+
+a:visited {
+  color: #000;
+}
+
 @media screen and (min-width: 1280px) {
   .sec1 #welcome {
     font-size: 103px;
